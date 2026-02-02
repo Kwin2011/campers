@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.filtersContainer {
+    max-width: 360px;
+}
+
+.camperslistcontainer {
+    flex: 1;
+}

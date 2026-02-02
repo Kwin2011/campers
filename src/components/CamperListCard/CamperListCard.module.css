@@ -1,0 +1,61 @@
+@import "../../styles/variables.css";
+
+.card {
+    display: flex;
+    gap: 1.5rem;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+
+.image {
+    width: 290px;
+    height: 310px;
+    border-radius: 1rem;
+    flex-shrink: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    gap: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-black);
+    margin: 0;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-right: 1rem;
+}
+
+.description {
+    font-size: 0.875rem;
+    color: var(--color-gray-700);
+    margin: 0 0 0.75rem;
+}
+
+.buttonContainer {
+    align-self: flex-start;
+}

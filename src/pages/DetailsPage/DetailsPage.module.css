@@ -1,0 +1,52 @@
+.container {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.meta {
+    font-size: 0.9rem;
+    color: var(--color-gray-700);
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.notice {
+    align-self: flex-start;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: var(--color-gray-800);
+    line-height: 1.5;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.outlet {
+    max-width: 600px;
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.outletLoading {
+    position: absolute;
+    left: calc(50% - 25% / 2);
+    top: calc(50% - 25% / 2);
+}
