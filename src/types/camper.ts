@@ -1,7 +1,17 @@
+/**
+ * Represents an image in the camper's gallery.
+ * @property thumb - Thumbnail URL for preview.
+ * @property original - Full-size image URL for modal/detail view.
+ */
+
 export interface GalleryImage {
     thumb: string;
     original: string;
 }
+
+/**
+ * User review for a specific camper.
+ */
 
 export interface CamperReview {
     reviewer_name: string;
@@ -50,7 +60,6 @@ export interface Camper extends Record<CamperFeature, boolean> {
     consumption: string;
     transmission: CamperTransmission;
     engine: CamperEngine;
-
     gallery: GalleryImage[];
     reviews: CamperReview[];
 }

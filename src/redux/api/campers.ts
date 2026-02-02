@@ -24,6 +24,10 @@ interface GetCampersParams {
     features?: CamperFeature[];
 }
 
+/**
+ * RTK Query API service for Campers.
+ * Uses axiosBaseQuery as a wrapper around Axios.
+ */
 const campersApi = createApi({
     reducerPath: "campers",
     baseQuery: axiosBaseQuery({
@@ -32,6 +36,13 @@ const campersApi = createApi({
     tagTypes: ["Campers", "Camper", "Locations"],
     endpoints(build) {
         return {
+            /**
+             * Fetches a list of campers with applied filters and pagination.
+             * 
+             * ⚠️ IMPORTANT: Since MockAPI has limited filtering capabilities,
+             * all complex logic (filtering by location, transmission, features) 
+             * is implemented client-side inside `transformResponse`.
+             */
             getCampers: build.query<Page<Camper>, GetCampersParams>({
                 query() {
                     return { url: "campers" };

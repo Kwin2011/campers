@@ -10,6 +10,10 @@ import {
 import storage from "redux-persist/lib/storage";
 import { persistReducer, persistStore } from "redux-persist";
 
+/**
+ * Redux Persist Configuration.
+ * Saves specific slices of state to the browser's LocalStorage.
+ */
 const persistConfig = {
     key: "root",
     storage,

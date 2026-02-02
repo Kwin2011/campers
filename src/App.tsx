@@ -15,6 +15,11 @@ const ReviewsSection = React.lazy(
   () => import("./pages/DetailsPage/ReviewsSection"),
 );
 
+/**
+ * Root Application Component.
+ * Handles routing configuration using React Router v6.
+ * Implements Lazy Loading for page components to optimize performance.
+ */
 function App() {
   return (
     <>
